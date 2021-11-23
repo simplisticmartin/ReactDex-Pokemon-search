@@ -1,0 +1,35 @@
+/*
+
+Keep this entire exercise to gen 1. We won't ever go higher than #151
+
+1. Display a list of the first 10 Pokemon by number. ie https://pokeapi.co/api/v2/pokemon/1, https://pokeapi.co/api/v2/pokemon/2, etc.
+2. Columns should be:
+    * Number (1, 2, 3, etc.)
+    * Thumbnail Image
+    * Name (Bulbasaur, Ivysaur, etc.)
+    * Types (one column of types: grass, poison)
+3. Types should appear as badges (eg. https://serebii.net/pokedex/001.shtml) in CSS ONLY. Get as close as you can. Font is not important
+4. User should be able to filter the list by text "search" (exclude items without the string in them)
+5. User should be able to filter the list by type "search" (exclude pokemon who lack the selected types)
+
+Considerations:
+
+// Proposal? Doesn't have to be this:
+{
+  pokemonToFetch: 10,
+  startingIndex: 1,
+}
+
+* What if, in the future, we want Pokemon 1-20?
+* What if, in the future, we want Pokemon 21-41?
+* What if, in the future, we want a separate part of the app to use the same pokemon data?
+* What if, in the future, clicking a list item shows all of its sprites down below the list?
+
+We want this application to keep state in redux
+Pokeball keep pokemon amount state
+Lets also make number searchable
+
+
+change to redux
+
+*/

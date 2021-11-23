@@ -1,3 +1,6 @@
-Temp repo 
+Updated Application
 
-https://codesandbox.io/s/optimistic-lederberg-5kfqz
+Soon:
+
+- Netilify
+- Redux Update

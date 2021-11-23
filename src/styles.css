@@ -1,0 +1,218 @@
+/** @format */
+
+* {
+  /* background: #343e4b; */
+  color: white;
+}
+body {
+  background: #343e4b;
+}
+.App {
+  text-align: center;
+  font-family: "Thasadith", sans-serif;
+}
+
+.pokemon-amount-input-outer {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.pokemon-amount-input-inner {
+  width: calc(22px * 6);
+  filter: drop-shadow(0px 0px 20px black);
+}
+.pokemon-amount-input-inner-active > .pokemon-amount-upper {
+  transform: translateY(23px);
+}
+.pokemon-amount-input-inner-active > .pokemon-amount-lower {
+  transform: translateY(0px);
+}
+.pokemon-amount-upper {
+  image-rendering: pixelated;
+  width: calc(22px * 6);
+  /* filter: drop-shadow(0px 0px 20px black); */
+  transition-duration: 0.4s;
+  transform: translateY(45px);
+  position: relative;
+  z-index: 3;
+  transition-timing-function: cubic-bezier(1, 0.02, 0.42, 0.99);
+}
+.pokemon-amount-input {
+  border: 2.9px solid white;
+  /* box-shadow: 0px 0px 0px 1px white inset; */
+  /* border: none; */
+  background: #343e4b;
+  width: calc(20px * 6);
+  border-radius: 5px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+.pokemon-amount-lower {
+  image-rendering: pixelated;
+  width: calc(22px * 6);
+  /* filter: drop-shadow(0px 0px 20px black); */
+  transition-duration: 0.4s;
+  transform: translateY(-20px);
+  z-index: 2;
+  transition-timing-function: cubic-bezier(1, 0.02, 0.42, 0.99);
+  position: relative;
+}
+
+.pokemon-amount-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
+}
+.pokemon-amount-icon:active {
+  transform: scale(0.95);
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+/**
+Styling for the LIST of pokemon
+
+Reference js file: pokemon.js
+including:
+container- which consists of all of the elements in the list
+info-id: The number id the pokemon is represented
+info-name: The name of the pokemon
+info-image: the image of the pokemon
+
+*/
+.pokemon-container {
+  display: flex;
+  border-style: dotted;
+  border-bottom: none;
+}
+.pokemon-container:last-child {
+  border-bottom: dotted;
+}
+.pokemon-info-id {
+  padding: 1rem;
+  line-height: 3.25rem;
+  width: 1.9rem;
+}
+.pokemon-info-name {
+  width: 12rem;
+  padding: 1rem;
+  line-height: 3.25rem;
+}
+.pokemon-info-image {
+  padding: 1rem;
+  height: 6.5rem;
+  width: auto;
+}
+.pokemon-data-all {
+  margin: 3rem 1rem 0 1rem;
+}
+.pokemon-search-bar {
+  background: #343e4b;
+  box-sizing: border-box;
+  border: 3px solid white;
+
+  position: fixed;
+  top: 0.4rem;
+  z-index: 100;
+  color: white;
+  width: 94.5%;
+  left: 50%;
+  margin-left: -47.25%; /*half of width, idk why this works*/
+  padding: 0.5rem;
+}
+.pokemon-search-bar::placeholder {
+  color: white;
+}
+.pokemon-all-returned-types {
+  margin: auto;
+}
+.pokemon-description {
+  margin: auto;
+  padding: 1rem;
+  width: 40rem;
+}
+/*
+Anchor tags to remove the styling in the text
+Anchor tags to bulbapedia pages are placed within the pokemon number,
+name and image
+*/
+.anchor-bulbapedia {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+/************************BADGES*********************************/
+
+/*pokemon type badges section
+
+badges of every type of pokemon
+
+*/
+.pokemon-type-badge {
+  font-family: "VT323";
+  justify-self: auto;
+
+  color: white;
+  border-radius: 0.15rem;
+  padding: 0.22rem;
+  text-shadow: 0.1rem 0.05rem black;
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.4),
+    inset 0px -2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*background color for individual types of Pokemon badges*/
+.pokemon-grass {
+  background-color: rgb(100, 188, 63);
+}
+.pokemon-ice {
+  background-color: rgb(133, 207, 207);
+}
+.pokemon-rock {
+  background-color: rgb(170, 142, 42);
+}
+.pokemon-dragon {
+  background-color: rgb(92, 43, 246);
+}
+.pokemon-dark {
+  background-color: rgb(93, 70, 56);
+}
+.pokemon-psychic {
+  background-color: rgb(247, 70, 117);
+}
+.pokemon-flying {
+  background-color: rgb(151, 126, 236);
+}
+.pokemon-steel {
+  background-color: rgb(169, 169, 197);
+}
+.pokemon-fire {
+  background-color: rgb(237, 109, 36);
+}
+.pokemon-fighting {
+  background-color: rgb(179, 36, 30);
+}
+.pokemon-ground {
+  background-color: rgb(217, 178, 85);
+}
+.pokemon-ghost {
+  background-color: rgb(93, 70, 134);
+}
+.pokemon-poison {
+  background-color: rgb(143, 49, 142);
+}
+.pokemon-water {
+  background-color: rgb(84, 126, 236);
+}
+.pokemon-fairy {
+  background-color: rgb(214, 148, 214);
+}
+.pokemon-electric {
+  background-color: rgb(246, 197, 36);
+}
+.pokemon-normal {
+  background-color: rgb(151, 151, 101);
+}
+.pokemon-bug {
+  background-color: rgb(151, 169, 24);
+}
